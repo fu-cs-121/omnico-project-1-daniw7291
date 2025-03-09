@@ -85,10 +85,26 @@ def main():
             max_duration = stats[algorithm]['avg_duration']
             highest_duration = algorithm
 
-    # TODO: Print the report
+    # Print the report
     # Use print statements to display the results in a formatted way
     # Follow the structure provided in the example output
-    print(stats)
+    print(f"Euphoria User Engagement Analysis Report")
+    print(f"----------------------------------------\n")
+    print(f"Average Happiness Rating per Algorithm:")
+    for algorithm in stats:
+        print(f"- {algorithm}: {stats[algorithm]['avg_duration']}")
+    print(f"\nTotal Number of Sessions per Algorithm:")
+    for algorithm in stats:
+        print(f"- {algorithm}: {stats[algorithm]['session_count']}")
+    print(f"\nAverage Session Duration per Algorithm:")
+    for algorithm in stats:
+        print(f"- {algorithm}: {stats[algorithm]['avg_duration']}")
+    print(f"\nHighest Average Happiness Rating:")
+    print(f"- {highest_happiness} with an average rating of {max_happiness}")
+    print(f"\nLongest Average Session Duration:")
+    print(f"- {highest_duration} with an average rating of {max_duration}")
+
+
 
 if __name__ == "__main__":
     main()
