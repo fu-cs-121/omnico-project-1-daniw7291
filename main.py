@@ -59,8 +59,7 @@ def main():
     #   - Calculate avg_happiness = total_happiness / session_count
     #   - Calculate avg_duration = total_duration / session_count
     #   - Store these back into the stats dictionary under 'avg_happiness' and 'avg_duration'
-    for algorithm in file:
-        if algorithm in stats:
+        for algorithm in stats:
             stats[algorithm]['avg_happiness'] = stats[algorithm]['total_happiness'] / stats[algorithm]['session_count']
             stats[algorithm]['avg_duration'] = stats[algorithm]['total_duration'] / stats[algorithm]['session_count']
 
@@ -68,6 +67,8 @@ def main():
     # TODO: Determine the algorithm with the highest average happiness rating
     # Initialize variables to keep track of the highest average happiness and the corresponding algorithm
     # Loop through stats to compare avg_happiness values
+    max_happiness = 0
+    highest_happiness = ""
 
     # TODO: Determine the algorithm with the longest average session duration
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
@@ -76,6 +77,7 @@ def main():
     # TODO: Print the report
     # Use print statements to display the results in a formatted way
     # Follow the structure provided in the example output
+    print(stats)
 
 if __name__ == "__main__":
     main()
