@@ -75,9 +75,15 @@ def main():
             highest_happiness = algorithm
 
 
-    # TODO: Determine the algorithm with the longest average session duration
+    # Determine the algorithm with the longest average session duration
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
     # Loop through stats to compare avg_duration values
+    max_duration = 0
+    highest_duration = ""
+    for algorithm in stats:
+        if stats[algorithm]['avg_duration'] > max_duration:
+            max_duration = stats[algorithm]['avg_duration']
+            highest_duration = algorithm
 
     # TODO: Print the report
     # Use print statements to display the results in a formatted way
