@@ -64,11 +64,16 @@ def main():
             stats[algorithm]['avg_duration'] = stats[algorithm]['total_duration'] / stats[algorithm]['session_count']
 
 
-    # TODO: Determine the algorithm with the highest average happiness rating
+    # Determine the algorithm with the highest average happiness rating
     # Initialize variables to keep track of the highest average happiness and the corresponding algorithm
     # Loop through stats to compare avg_happiness values
     max_happiness = 0
     highest_happiness = ""
+    for algorithm in stats:
+        if stats[algorithm]['avg_happiness'] > max_happiness:
+            max_happiness = stats[algorithm]['avg_happiness']
+            highest_happiness = algorithm
+
 
     # TODO: Determine the algorithm with the longest average session duration
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
