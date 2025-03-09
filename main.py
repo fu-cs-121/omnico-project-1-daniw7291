@@ -92,7 +92,7 @@ def main():
     print(f"----------------------------------------\n")
     print(f"Average Happiness Rating per Algorithm:")
     for algorithm in stats:
-        print(f"- {algorithm}: {stats[algorithm]['avg_duration']}")
+        print(f"- {algorithm}: {stats[algorithm]['avg_happiness']}")
     print(f"\nTotal Number of Sessions per Algorithm:")
     for algorithm in stats:
         print(f"- {algorithm}: {stats[algorithm]['session_count']}")

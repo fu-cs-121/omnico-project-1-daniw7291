@@ -1,17 +1,17 @@
 # Euphoria User Engagement Analysis Report
 
-**Author:** [Your Name]  
-**Date:** [Submission Date]
+**Author:** [Dani Wood]  
+**Date:** [3/8/2025]
 
 ---
 
 ## Introduction
 
-[Provide a brief overview of the project objectives and the importance of the analysis.]
+[Understand File I/O, Parse CSV Data, Organize Data with Dictionaries]
 
 ## Methodology
 
-[Describe the steps you took to perform the analysis, including any calculations and reasoning behind them.]
+[First, I defined session_duration and happiness_rating as integer values. Next, I created a loop that calculated the average duration and average happiness of each algorithm. Then, I created a loop to find the algorithm with the highest of each of those values. Finally, I printed the results. ]
 
 ## Results
 
