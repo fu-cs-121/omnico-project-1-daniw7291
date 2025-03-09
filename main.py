@@ -98,11 +98,11 @@ def main():
         print(f"- {algorithm}: {stats[algorithm]['session_count']}")
     print(f"\nAverage Session Duration per Algorithm:")
     for algorithm in stats:
-        print(f"- {algorithm}: {stats[algorithm]['avg_duration']}")
+        print(f"- {algorithm}: {stats[algorithm]['avg_duration']} minutes")
     print(f"\nHighest Average Happiness Rating:")
-    print(f"- {highest_happiness} with an average rating of {max_happiness}")
+    print(f"- {highest_happiness} with an average happiness rating of {max_happiness}")
     print(f"\nLongest Average Session Duration:")
-    print(f"- {highest_duration} with an average rating of {max_duration}")
+    print(f"- {highest_duration} with an average session duration of {max_duration} minutes")
 
 
 
